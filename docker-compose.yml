@@ -8,17 +8,5 @@ services:
     ports:
       - "25565:25565"
       - "19132:19132/udp"
-    volumes:
-      - ./data:/minecraft/data
     environment:
       - EULA=true
-#    depends_on:
-#      - geyser
-#  geyser:
-#    container_name: geyser
-#    ports:
-#      - "19132:19132/udp"
-#    environment:
-#      - EULA=true
-#    volumes:
-#      - ./data:/data
